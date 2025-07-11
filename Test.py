@@ -1,6 +1,7 @@
 import ollama
 import gradio as gr
-import os
+
+ollama_client = ollama.Client()
 
 # Goal - create session ID with gradio, create individuality with each session
 with gr.Blocks() as demo:
