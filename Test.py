@@ -1,33 +1,6 @@
 import ollama
 import gradio as gr
 import os
-from mem0 import Memory
-os.environ["OPENAI_API_KEY"] = "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"
-
-# Configure mem0 for local LLM
-config = {
-    "llm": {
-        "provider": "ollama",
-        "config": {
-            "model": "llama3.1:latest",
-            "temperature": .1,
-        }
-    },
-}
-
-try:
-    memory = Memory.from_config(config)
-    ollama_client = ollama.Client()
-    print("Memory system initialized successfully!")
-except Exception as e:
-    print(f"Error initializing memory: {e}")
-    memory = None
-    ollama_client = ollama.Client()
-
-## Update memory -> m.update( mem id / data)
-## Search memory -> m.serach (query, id)
-## Delete memory -> m.delete (mem id)
-## Get memory history -> m.history (message id)
 
 # Goal - create session ID with gradio, create individuality with each session
 with gr.Blocks() as demo:
