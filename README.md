@@ -3,10 +3,10 @@ A friendly AI teddy bear chatbot designed for children, powered by local LLM hos
 
 ### Features
 
-Child-friendly AI: Ted is designed to be a safe, friendly companion for kids
-Local LLM: Runs entirely on your local machine using Ollama
-User Sessions: Each user gets their own personalized experience with username storage
-Web Interface: Easy-to-use Gradio interface accessible through your browser
+- Child-friendly AI: Ted is designed to be a safe, friendly companion for kids
+- Local LLM: Runs entirely on your local machine using Ollama
+- User Sessions: Each user gets their own personalized experience with username storage
+- Web Interface: Easy-to-use Gradio interface accessible through your browser
 
 ### Prerequisites
 
