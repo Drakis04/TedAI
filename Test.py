@@ -21,12 +21,10 @@ with gr.Blocks() as demo:
         return saved_value
 
     def tedresponse(message , chathist, userstate):
-        client = ollama.Client()
-        model = "Ted"
-
         # Ted Prompt
         system_prompt = (
             "You are Ted, a friendly AI teddy bear for children. "
+            "Keep responses to 1-3 short sentences, dont ask multiple questions at once."
             "Always speak kindly and avoid discussing any sensitive, harmful, or adult topics.\n\n"
         )
 
